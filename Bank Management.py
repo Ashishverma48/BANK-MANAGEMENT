@@ -81,10 +81,11 @@ def details():
     for i in result:
         print('NAME     ', i[0])
         print('ACCNO   ', i[1])
-        print('DON    ', i[2])
+        print('DOB    ', i[2])
         print('ADDRESS ', i[3])
         print('MOB NO. ', i[4])
         print('BALANCE ', i[5])
+        print("")
     main()
 
 
@@ -98,9 +99,11 @@ def close():
 
     main()
 
+
 def exit():
     print("THANKS FOR USING BANK MANAGEMENT SYSTEM ")
     quit()
+
 
 def main():
     print("""
@@ -112,7 +115,7 @@ def main():
             6. CLOSE ACCOUNT 
             7. EXIT  """)
 
-    choice = input("ENTER THE TASK NUMBER YOU WANT TO PERFORME 1-6  : ")
+    choice = input("ENTER THE TASK NUMBER YOU WANT TO PERFORME 1-7  : ")
 
     if choice == '1':
         openacc()
@@ -129,7 +132,7 @@ def main():
     elif choice == '7':
         exit()
     else:
-        print("WRONG NUMBER PLEAS ENTER 1 - 6  ")
+        print("WRONG NUMBER PLEAS ENTER 1 - 7   ")
 
     main()
 
